@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "222591840032",
+    "project_id": "resonant-prism-297803",
+    "storage_bucket": "resonant-prism-297803.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222591840032:android:5b1352fd34026659557145",
+        "android_client_info": {
+          "package_name": "com.example.androidkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222591840032-nlcrfe1ensq4re6sfjtgk657vlnhff03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLluikqBmOHlzjK2GvhVHdZmmQ0WoF5Qk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222591840032-nlcrfe1ensq4re6sfjtgk657vlnhff03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
