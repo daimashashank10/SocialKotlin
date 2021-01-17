@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="30dp">
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="144dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/awesomeTextInputLayout"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="230dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="\@username" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="314dp">
+
+            <EditText
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:hint="Status"
+               />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save and Proceed" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

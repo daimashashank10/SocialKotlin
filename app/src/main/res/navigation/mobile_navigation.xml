@@ -6,20 +6,25 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_feeds"
         android:name="com.example.androidkotlin.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="@string/title_feeds"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_find_Friends"
         android:name="com.example.androidkotlin.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/title_find_friends"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_message"
         android:name="com.example.androidkotlin.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/title_message"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.androidkotlin.ui.notifications.NotificationsFragment"
+        android:label="@string/title_message"
         tools:layout="@layout/fragment_notifications" />
 </navigation>

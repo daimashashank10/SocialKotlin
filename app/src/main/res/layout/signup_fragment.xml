@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:id="@+id/awesomeTextInputLayout2"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="13dp"
+        app:borderColor="#5300e8"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/awesomeTextInputLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/awesomeTextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/awesomeTextInputLayout">
+
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:id="@+id/awesomeTextInputLayout"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:padding="13dp"
+        app:borderColor="#5300e8"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/google_signin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265">
+
+        <EditText
+            android:id="@+id/signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:id="@+id/confirm_password"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="13dp"
+        app:borderColor="#5300e8"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/awesomeTextInputLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/awesomeTextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/awesomeTextInputLayout2">
+
+        <EditText
+            android:id="@+id/signup_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="341dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:text="SignUp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/confirm_password"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/awesomeTextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="Already Have An Account?"
+        app:layout_constraintStart_toStartOf="@+id/signup_button"
+        app:layout_constraintTop_toBottomOf="@+id/signup_button" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Login"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
