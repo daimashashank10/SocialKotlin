@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_feeds">
 
     <fragment
         android:id="@+id/navigation_feeds"
-        android:name="com.example.androidkotlin.ui.home.HomeFragment"
+        android:name="com.example.androidkotlin.ui.feeds.FeedsFragment"
         android:label="@string/title_feeds"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_feeds" />
 
     <fragment
         android:id="@+id/navigation_find_Friends"
