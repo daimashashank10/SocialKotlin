@@ -18,9 +18,7 @@ import kotlinx.coroutines.launch
 
 class SignUpFragment: Fragment() {
     private lateinit var mAuth: FirebaseAuth
-    companion object {
-        fun newInstance() = SetupFragment()
-    }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -53,7 +51,7 @@ class SignUpFragment: Fragment() {
                 GlobalScope.launch(Dispatchers.IO) {
                     mAuth.signInWithEmailAndPassword(email,password).addOnSuccessListener {
                         GlobalScope.launch (Dispatchers.Main){
-                            toSetupFragment();
+                            TODO();
                         }
                     }.addOnFailureListener{
                         Snackbar.make(view, it.message.toString(), Snackbar.LENGTH_SHORT)
@@ -66,9 +64,4 @@ class SignUpFragment: Fragment() {
         return view;
     }
 
-    private fun toSetupFragment() {
-        activity?.supportFragmentManager?.beginTransaction()
-            ?.replace(R.id.container, SetupFragment.newInstance())
-            ?.commitNow()
-    }
-}
+  }

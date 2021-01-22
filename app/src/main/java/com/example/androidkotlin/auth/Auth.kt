@@ -14,12 +14,13 @@ class Auth : AppCompatActivity() {
         setContentView(R.layout.auth_activity)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, LoginFragment.newInstance())
+                .replace(R.id.container_auth, LoginFragment.newInstance())
                 .commitNow()
         }
         supportActionBar?.setTitle("Login With an Account")
 
     }
+
 
 
 }

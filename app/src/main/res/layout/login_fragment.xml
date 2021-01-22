@@ -25,6 +25,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/login_email"
             android:hint="Email" />
 
     </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
@@ -46,6 +47,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/login_password"
             android:hint="Password"
             android:inputType="textPassword" />
 
@@ -62,7 +64,7 @@
         app:layout_constraintStart_toStartOf="@+id/awesomeTextInputLayout2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/login_button"
         android:layout_width="345dp"
         android:layout_height="47dp"
         android:layout_marginTop="200dp"
@@ -78,8 +80,8 @@
         android:layout_marginStart="68dp"
         android:layout_marginTop="32dp"
         android:text="Don't Have an Account?"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintStart_toStartOf="@+id/login_button"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
 
     <TextView
         android:id="@+id/textView3"
